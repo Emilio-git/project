@@ -17,7 +17,7 @@
   flex: 1 1 auto;
   min-height: 100vh;
   padding-top: 39px;
-  background: url(../img/header/bg__header.jpg) no-repeat;
+  background: url(../img/header/bg__header.jpg) no-repeat fixed;
   background-size: cover;
   display: flex;
 }
@@ -331,6 +331,10 @@
   color: #636971;
   font-weight: 700;
 }
+.bolded-w {
+  color: #fff;
+  font-weight: 700;
+}
 
 .submain__description {
   margin: 0 0 0 64.5px;
@@ -338,4 +342,225 @@
   line-height: 25px;
   font-family: "Open Sans";
   letter-spacing: 0.7px;
+}
+
+.projects__body {
+  padding-top: 80px;
+}
+
+.projects__main {
+  text-align: center;
+  max-width: 457px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.projects__title {
+  color: #333b46;
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+}
+
+.projects__subtitle {
+  color: #81868e;
+  font-family: "Open Sans";
+  line-height: 25px;
+  letter-spacing: 0.7px;
+}
+
+.p-slider__body {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+}
+
+.p-slider__item {
+  flex: 0 1 33.333%;
+  width: 30%;
+  position: relative;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+.p-slider__item:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: #000;
+  opacity: 0.85;
+}
+.p-slider__item:hover:after {
+  display: none;
+}
+.p-slider__item:hover {
+  flex: 0 1 auto;
+  width: 50%;
+  z-index: 5;
+}
+
+.project__footer {
+  background: url(../img/project/bg.png) center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.project_bg {
+  position: absolute;
+  background: #19bd9a;
+  opacity: 0.35;
+  width: 100%;
+  height: 100%;
+}
+
+.p-footer__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1004px;
+  margin: 0 auto;
+  padding: 45px 0;
+}
+
+.p-footer__text {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.p-footer__button a {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 37px;
+  text-align: center;
+  border-radius: 19px;
+  border: 1px solid #ffffff;
+  padding: 0 20px;
+  transition: all 0.3s;
+}
+.p-footer__button a:hover {
+  box-shadow: 0 0 5px #000;
+}
+
+.services {
+  background: #f3f3f3;
+}
+
+.services__body {
+  max-width: 1028px;
+  margin: 0 auto;
+  padding: 80px 0 130px;
+}
+
+.services__main {
+  max-width: 457px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services__title {
+  color: #333b46;
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+}
+
+.services__text {
+  color: #81868e;
+  font-family: "Open Sans";
+  line-height: 25px;
+  letter-spacing: 0.7px;
+}
+
+.services__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services__var {
+  display: flex;
+}
+
+.var__item {
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  display: flex;
+  background: #81868e;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.var__item:last-child {
+  margin-bottom: 0;
+}
+.var__item.active {
+  background: #19bd9a;
+}
+.var__item img {
+  width: 30px;
+  height: 30px;
+}
+
+.var__main {
+  max-width: 397px;
+  margin-left: 34px;
+}
+
+.var__title {
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.8px;
+  margin-bottom: 24px;
+}
+
+.var__text {
+  color: #81868e;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.var__description {
+  color: #81868e;
+  font-family: "Open Sans";
+  line-height: 25px;
+}
+
+.numbers__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.numbers__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.numbers__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
